@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(./assets/fonts/popins/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins-light';
+  src: url(./assets/fonts/popins/Poppins-Light.ttf);
+}
+
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f3f4f6;
+
+}
