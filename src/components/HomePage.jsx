@@ -1,6 +1,6 @@
 import { Spotlight } from './util/Spotlight'
 import { Home } from './Home'
-
+import RecentPosts from './RecentPosts'
 export default function HomePage() {
     return (
         <>
@@ -10,6 +10,7 @@ export default function HomePage() {
         fill="white"
             />
             <Home />
+            <RecentPosts />
         </>
   )
 }
