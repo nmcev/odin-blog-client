@@ -10,7 +10,7 @@ export default {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
       lightPoppins: ["Poppins-light", "sans-serif"],
-      
+      boldPoppins: ["Poppins-bold", "sans-serif"],
     },
     extend: {
       animation: {
