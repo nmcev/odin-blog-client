@@ -10,6 +10,29 @@
   src: url(./assets/fonts/popins/Poppins-Light.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url(./assets/fonts/popins/Poppins-Bold.ttf);
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 7s ease infinite alternate;
+  -moz-animation: animatedgradient 7s ease infinite alternate;
+  animation: animatedgradient 7s ease infinite alternate;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .quicksand-font {
   font-family: "Quicksand", sans-serif;
