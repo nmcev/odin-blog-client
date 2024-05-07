@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer'
 function App() {
 
 
@@ -6,6 +7,7 @@ function App() {
     <div className=' w-full antialiased bg-grid-white/[0.02] relative overflow-hidden'>
 
       <Outlet />
+      <Footer />
     </div>
   )
 }
