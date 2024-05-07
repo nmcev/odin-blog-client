@@ -36,7 +36,15 @@ export default function RecentPosts() {
             <TwoPostsSide />
         </section>
     </article>
-    
+
+    <div className="mt-10 text-center">
+        <blockquote className="text-xl font-bold text-neutral-900 italic font-lightPoppins">
+                &quot;He who can destroy oneself can live, then how can one commit suicide?&quot;
+        </blockquote>
+         <p className="text-sm text-neutral-600 mt-2">
+            - Anonymous
+        </p>
+    </div>
 </div>
 </section>
       </>
