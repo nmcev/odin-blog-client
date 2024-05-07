@@ -1,6 +1,6 @@
-import { Spotlight } from './util/Spotlight'
-import { Home } from './Home'
-import RecentPosts from './RecentPosts'
+import { Spotlight } from '../components/util/Spotlight'
+import { Home } from '../components/Home'
+import RecentPosts from '../components/RecentPosts'
 export default function HomePage() {
     return (
         <>
