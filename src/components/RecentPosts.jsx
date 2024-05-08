@@ -6,7 +6,7 @@ import BiggestPost from "./util/BiggestPost"
 export default function RecentPosts() {
   return (
       <>
-<section className="bg-fuchsia-50 text-black">
+<section className="text-black">
 
     <div className="container mx-auto py-12">
     <article className="flex flex-col items-center justify-center max-sm:mx-2">
@@ -38,7 +38,7 @@ export default function RecentPosts() {
     </article>
 
     <div className="mt-10 text-center">
-        <blockquote className="text-xl font-bold text-neutral-900 italic font-lightPoppins">
+        <blockquote className="text-xl text-neutral-900 italic font-lightPoppins">
                 &quot;He who can destroy oneself can live, then how can one commit suicide?&quot;
         </blockquote>
          <p className="text-sm text-neutral-600 mt-2">
