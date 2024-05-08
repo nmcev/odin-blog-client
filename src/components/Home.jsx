@@ -5,7 +5,7 @@ export function Home() {
   return (
 
       <div className=' w-full flex flex-col bg-[#153448] antialiased bg-grid-white/[0.02] relative overflow-hidden '>
-        <Header />
+        <Header color='white' />
 
       <div className=" p-4 max-w-7xl flex flex-col h-[100dvh]  justify-center items-center  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <div className="flex flex-col items-center justify-center mb-12 max-sm:mb-20">
