@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function AboutButton() {
     let history = useNavigate();
@@ -25,17 +26,17 @@ function PostsButton() {
       </button>
     );
 }
-export default function Header() {
-
+export default function Header({color = 'white'}) {
+console.log(color)
 
     return (
         <header className="mt-6 md:ml-20  text-lg max-md:ml-12 max-sm:text-md max-sm:mt-8 quicksand-font ">
             <nav>
                 <ul className="list-none flex  gap-16">
-                    <li className=" text-white ">
+                <li className={`text-${color}`} >
                         <PostsButton />
                     </li>
-                    <li className="  text-white ">
+                    <li className={`text-${color}`} >
                         <AboutButton />
                     </li>
                 </ul>
@@ -43,3 +44,7 @@ export default function Header() {
       </header>
   )
 }
+
+Header.propTypes = {
+    color: PropTypes.string,
+};
