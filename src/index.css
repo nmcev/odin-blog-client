@@ -50,9 +50,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #f3f4f6;
-
-}
