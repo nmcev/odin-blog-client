@@ -33,7 +33,7 @@ function LinkedInButton() {
 
 export default function Footer() {
     return (
-        <footer className="footer p-5 bg-fuchsia-50 flex justify-around items-center flex-wrap">
+        <footer className="footer p-5  flex justify-around items-center flex-wrap">
         <div className="flex items-center">
                 <div className="flex-1">
                     <p className=" text-[#3e3e3e]">
