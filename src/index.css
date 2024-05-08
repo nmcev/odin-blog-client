@@ -15,6 +15,11 @@
   src: url(./assets/fonts/popins/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family:  'Careem';
+  src: url(./assets/fonts/careem/CareemRegular.ttf);
+}
+
 .animate-gradient {
   background-size: 300%;
   -webkit-animation: animatedgradient 7s ease infinite alternate;

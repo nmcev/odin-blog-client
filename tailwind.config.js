@@ -11,6 +11,7 @@ export default {
       poppins: ["Poppins", "sans-serif"],
       lightPoppins: ["Poppins-light", "sans-serif"],
       boldPoppins: ["Poppins-bold", "sans-serif"],
+      careem: ["Careem", "sans-serif"],
     },
     extend: {
       animation: {
