@@ -12,7 +12,9 @@ export default function PostCard() {
                 </p>
             </div>
             {/*  image section */}
-            <img className="" src="https://dummyimage.com/128x128" alt="blog" width={128} height={128}/>
+            <div className="flex items-center">
+                <img className="max-w-full h-auto" src="https://dummyimage.com/128x128" alt="blog" width={128} height={128}/>
+            </div>
         </article>
   )
 }
