@@ -73,7 +73,7 @@ export default function PostPage() {
       <Header color='black' />
     <section className="container mx-auto py-2 min-h-screen">
 
-      <article className="flex flex-col items-center justify-center max-sm:mx-2">
+      <article className="flex flex-col items-center justify-center max-sm:mx-2 md:ml-20">
         <div className="mt-8 flex flex-col items-left ">
             <h1 className="text-3xl font-bold font-careem ">
               {post.title}
@@ -88,11 +88,11 @@ export default function PostPage() {
         </div>
 
         <div className="mt-8">
-          <img  src={post.img} alt="blog" style={{ maxWidth: '800px', height: 'auto' }} />
+            <img src={post.img} alt="blog" className="max-w-full h-auto lg:max-w-[800px]" />
          </div>
 
           <div className="mt-8 max-w-5xl">
-            <p className="text-lg text-neutral-900 font-careem li" dangerouslySetInnerHTML={{__html: post.content}}>
+            <p className="text-lg text-neutral-900 font-careem max-sm:text-base" dangerouslySetInnerHTML={{__html: post.content}}>
             </p>
           </div>
               <article className='w-full gap-4  mx-auto'>
@@ -118,7 +118,7 @@ export default function PostPage() {
                           </div>
                          </div>
 
-                              <button onClick={handlePostComment} type='submit' className='bg-blue-500 p-2 ml-4 rounded-md text-white'>
+                              <button onClick={handlePostComment} type='submit' className='bg-[#191919] p-2 ml-4 rounded-none text-white font-careem'>
                                 comment
                               </button>
                         </form>
