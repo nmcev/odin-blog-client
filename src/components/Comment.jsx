@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 export default function Comment({comment}) {
     return (
-        <div className="flex flex-col gap-6 m-4 w-full">
          <div className="flex flex-row items-center w-full pb-2 border-b border-gray-400">
           <div className="w-10 h-10 rounded-full overflow-hidden flex self-start">
             <img
@@ -22,7 +21,6 @@ export default function Comment({comment}) {
             </p>
           </div>
         </div>
-    </div>
   )
 }
 
