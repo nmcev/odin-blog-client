@@ -14,7 +14,7 @@ export default function Comment({comment}) {
           <div className="pl-2 flex flex-col gap-3">
             <div className='flex  flex-col'>
               <h3 className="m-0 font-boldPoppins">{comment.username}</h3>
-              <small className="m-0 text-xs">{comment.formattedDate}</small>
+              <small className="m-0 text-xs text-neutral-500">{comment.formattedDate}</small>
             </div>
             <p className="text-sm font-careem">
                 {comment.text}
