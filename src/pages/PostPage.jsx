@@ -122,7 +122,7 @@ export default function PostPage() {
                                 comment
                               </button>
                         </form>
-                        <div className="flex flex-col gap-6 m-4 w-full">
+                        <div className="flex flex-col gap-6 m-4 w-full max-sm:mt-10">
                           {
                             post.comments && post.comments.slice().reverse().map(comment => (
                               <Comment  key={comment._id} comment={comment}/>
