@@ -96,7 +96,7 @@ export default function PostPage() {
             </p>
           </div>
               <article className='w-full gap-4  mx-auto'>
-                    <h2 className=' font-boldPoppins  border-b-2'>Comments</h2>
+                    <h2 className=' font-boldPoppins p-2  border-b-2'>Comments</h2>
                         <form  method='post'   >
                         <div className="w-72 m-4">
                           <div className="relative w-full min-w-[200px] h-10">
@@ -124,7 +124,7 @@ export default function PostPage() {
                         </form>
                         <div className="flex flex-col gap-6 m-4 w-full">
                           {
-                            post.comments && post.comments.map(comment => (
+                            post.comments && post.comments.slice().reverse().map(comment => (
                               <Comment  key={comment._id} comment={comment}/>
                             ))
                           }
