@@ -10,18 +10,21 @@ export default function PostPage() {
 
   if (!post) {
     return (
-      <div className='flex  space-x-2 justify-center items-center bg-white h-[600px] dark:invert'>
+      <>
+      <Header color='black' />
+      <div className='flex  space-x-2 justify-center items-center bg-white h-[90vh] dark:invert'>
       <span className='sr-only'>Loading...</span>
       <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
       <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
       <div className='h-4 w-4 bg-black rounded-full animate-bounce'></div>
-  </div>
+        </div>
+      </>
     )
   }
   return (
     <>
       <Header color='black' />
-    <section className="container mx-auto py-12 min-h-screen">
+    <section className="container mx-auto py-2 min-h-screen">
 
       <article className="flex flex-col items-center justify-center max-sm:mx-2">
         <div className="mt-8 flex flex-col items-left ">
