@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <PostsPage />,
       },
       {
-        path: 'posts/:id',
+        path: 'posts/:slug',
         element: <PostPage />,
       },
       {
