@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer'
+import { PostsContextProvider } from './context/PostsContext'
 function App() {
 
 
   return (
     <>
-      <Outlet />
-      <Footer />
+      <PostsContextProvider>
+        <Outlet />
+        <Footer />
+    </PostsContextProvider>
     </>
   )
 }
