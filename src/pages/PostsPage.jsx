@@ -13,7 +13,7 @@ export default function PostsPage() {
                 <div className='flex divide-y-2 flex-col items-center w-full max-w-3xl mx-auto'>
                     {
                         posts.length > 0 ? (
-                            posts.map((post) => (
+                            posts.slice().reverse().map((post) => (
                                 <PostCard post= {post}  key={post._id}/>
                             ))
                         ) :
