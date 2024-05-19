@@ -71,7 +71,7 @@ export default function PostPage() {
   return (
     <>
       <Header color='black' />
-    <section className="container mx-auto py-2 min-h-screen">
+    <section className="container mx-auto py-2 max-sm:ml-2 min-h-screen">
 
       <article className="flex flex-col items-center justify-center max-sm:mx-2 md:ml-20">
         <div className="mt-8 flex flex-col items-left ">
@@ -91,8 +91,8 @@ export default function PostPage() {
             <img src={post.img} alt="blog" className="max-w-full h-auto lg:max-w-[800px]" />
          </div>
 
-          <div className="mt-8 max-w-5xl">
-            <p className="text-lg text-neutral-900 font-careem max-sm:text-base" dangerouslySetInnerHTML={{__html: post.content}}>
+          <div className="mt-8 max-w-4xl">
+            <p className="text-md text-neutral-900 font-careem max-sm:text-base" dangerouslySetInnerHTML={{__html: post.content}}>
             </p>
           </div>
               <article className='w-full gap-4  mx-auto'>
