@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import { useContext, useEffect, useState } from 'react';
 import { PostsContext } from '../context/PostsContext';
 import Comment from '../components/Comment';
+import NotFoundPage from './NotFoundPage';
 export default function PostPage() {
   const [post, setPost] = useState({})
   const { slug } = useParams();
@@ -14,9 +15,11 @@ export default function PostPage() {
 
 
   useEffect(() => {
-    setPost(posts.find(post => post.slug === slug));
-
-  },[posts, slug])
+    if (posts.length > 0) {
+      const foundPost = posts.find(post => post.slug === slug);
+      setPost(foundPost || null);
+    }
+  }, [posts, slug]);
 
   const handlePostComment = async (e) => {
 
@@ -57,13 +60,7 @@ export default function PostPage() {
   if (!post) {
     return (
       <>
-      <Header color='black' />
-      <div className='flex  space-x-2 justify-center items-center bg-white h-[90vh]'>
-      <span className='sr-only'>Loading...</span>
-      <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
-      <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
-      <div className='h-4 w-4 bg-black rounded-full animate-bounce'></div>
-        </div>
+     <NotFoundPage />
       </>
     )
   }
