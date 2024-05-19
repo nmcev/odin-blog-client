@@ -13,9 +13,12 @@ export default function PostsPage() {
                 <div className='flex divide-y-2 flex-col items-center w-full max-w-3xl mx-auto'>
                     {
                         posts.length > 0 ? (
-                            posts.slice().reverse().map((post) => (
-                                <PostCard post= {post}  key={post._id}/>
-                            ))
+                            posts.slice().reverse().map((post) => {
+                                if (post.published) {
+                                    return <PostCard post={post} key={post._id} />
+
+                                }
+                            })
                         ) :
                         (
                             <div className='flex  space-x-2 justify-center items-center bg-white h-[600px] '>
