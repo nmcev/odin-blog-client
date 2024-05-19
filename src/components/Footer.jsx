@@ -1,13 +1,11 @@
 import { RxLinkedinLogo } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
-import { useNavigate } from "react-router";
 
 
 function GithubButton() {
-    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('https://gitub.com/nmcev');
+         window.location.href = 'https://gitub.com/nmcev';
     }
 
     return (
@@ -18,10 +16,9 @@ function GithubButton() {
 }
 
 function LinkedInButton() {
-    const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('https://www.linkedin.com/in/muhammed-khalid-2058b5251/');
+            window.location.href = 'https://www.linkedin.com/in/muhammed-khalid-2058b5251/'
     }
 
     return (
