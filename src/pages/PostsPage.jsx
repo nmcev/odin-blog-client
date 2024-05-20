@@ -8,7 +8,7 @@ export default function PostsPage() {
     return (
         <>
         <Header color='black'/>
-      <section className='container min-h-screen mx-auto'>
+      <section className='container mx-auto'>
             <PostsHeader />
                 <div className='flex divide-y-2 flex-col items-center w-full max-w-3xl mx-auto'>
                     {

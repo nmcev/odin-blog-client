@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <PostsContextProvider>
+        <div className='flex flex-col min-h-screen'>
         <Outlet />
-        <Footer />
+          <Footer />
+      </div>
     </PostsContextProvider>
     </>
   )
