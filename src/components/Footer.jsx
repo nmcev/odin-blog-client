@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 function GithubButton() {
 
     const handleClick = () => {
-         window.location.href = 'https://gitub.com/nmcev';
+         window.location.href = 'https://github.com/nmcev';
     }
 
     return (
