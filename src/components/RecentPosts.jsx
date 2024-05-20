@@ -1,9 +1,16 @@
 import TwoPostsSide from "./util/TwoPostsSide"
 import BiggestPost from "./util/BiggestPost"
+import { useContext, useEffect, useState } from "react"
+import { PostsContext } from "../context/PostsContext"
 
 
 
 export default function RecentPosts() {
+    const { posts } = useContext(PostsContext);
+    const [biggestPost, setBiggestPost] = useState({})
+    useEffect(() => {
+        setBiggestPost(posts[0])
+    }, [posts])
   return (
       <>
 <section className="text-black">
@@ -32,7 +39,7 @@ export default function RecentPosts() {
         </div>
 
         <section className='container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-32 mt-10'>
-            <BiggestPost />
+            <BiggestPost post={biggestPost} />
             <TwoPostsSide />
         </section>
     </article>
