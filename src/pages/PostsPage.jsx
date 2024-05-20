@@ -4,7 +4,7 @@ import PostCard from '../components/PostCard'
 import PostsHeader from '../components/PostsHeader'
 import { PostsContext } from '../context/PostsContext'
 export default function PostsPage() {
-    const { posts } = useContext(PostsContext)
+    const { posts, loading} = useContext(PostsContext)
     return (
         <>
         <Header color='black'/>
@@ -12,7 +12,7 @@ export default function PostsPage() {
             <PostsHeader />
                 <div className='flex divide-y-2 flex-col items-center w-full max-w-3xl mx-auto'>
                     {
-                        posts.length > 0 ? (
+                        !loading? (
                             posts.slice().reverse().map((post) => {
                                 if (post.published) {
                                     return <PostCard post={post} key={post._id} />
