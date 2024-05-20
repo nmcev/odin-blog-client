@@ -7,7 +7,7 @@ import NotFoundPage from './NotFoundPage';
 export default function PostPage() {
   const [post, setPost] = useState({})
   const { slug } = useParams();
-  const { posts} = useContext(PostsContext);
+  const { posts, loading} = useContext(PostsContext);
   const [commentData, setCommentData] = useState({
     username: '',
     text: ''
@@ -72,6 +72,19 @@ export default function PostPage() {
     )
   }
 
+  if (loading) {
+    return (
+        <>
+    <Header color='black' />
+        <div className='flex  space-x-2 justify-center items-center bg-white h-[800px] '>
+                <span className='sr-only'>Loading...</span>
+                <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                <div className='h-4 w-4 bg-black rounded-full animate-bounce [animation-delay:-0.15s]'></div>
+                <div className='h-4 w-4 bg-black rounded-full animate-bounce'></div>
+        </div>
+        </>
+    )
+}
   return (
     <>
       <Header color='black' />
