@@ -6,6 +6,8 @@ export const PostsContext = createContext(null)
 export function PostsContextProvider({ children }) {
 
     const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState([]);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -15,8 +17,10 @@ export function PostsContextProvider({ children }) {
                 const data = await response.json();
 
                 setPosts(data);
+                setLoading(false)
             } catch (err) {
-                console.log(err)
+                setError(err)
+                setLoading(false)
             }
 
         }
@@ -26,6 +30,8 @@ export function PostsContextProvider({ children }) {
 
     const values = {
         posts,
+        loading,
+        error,
         setPosts,
     }
 
