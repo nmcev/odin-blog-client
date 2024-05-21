@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.jsx'
 import PostsPage from './pages/PostsPage.jsx'
 import PostPage from './pages/PostPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
+import AboutPage from './pages/AboutPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <div></div>,
+        element: <AboutPage />
       }
     ]
   },
