@@ -11,7 +11,7 @@ export function Home() {
 
       <div className=" p-4 max-w-7xl flex flex-col h-[100dvh]  justify-center items-center  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <div className="flex flex-col items-center justify-center mb-12 max-sm:mb-20">
-          <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b dark:text-white from-neutral-50 dark:to-slate-50 to-neutral-400 bg-opacity-50 font-poppins uppercase">
+          <h1 className="text-4xl md:text-7xl text-neutral-200 font-bold text-center  font-poppins uppercase">
             Welcome to the Blog
             <br /> from the future.
         </h1>
