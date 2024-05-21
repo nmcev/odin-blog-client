@@ -9,7 +9,7 @@ function GithubButton() {
     }
 
     return (
-        <button type="button" onClick={handleClick}>
+        <button aria-label="Github account" type="button" onClick={handleClick}>
             <FaGithub size={'24px'} />
         </button>
     );
@@ -22,7 +22,7 @@ function LinkedInButton() {
     }
 
     return (
-        <button type="button" onClick={handleClick}>
+        <button aria-label="LinkedIn account" type="button" onClick={handleClick}>
             <RxLinkedinLogo size={'24px'} />
         </button>
     );
