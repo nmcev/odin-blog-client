@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
 
         <nav>
-          <h6 className="footer-title text-center font-careem">Social</h6> 
+          <p className="footer-title text-center font-careem">Social</p> 
           <div className="grid grid-flow-col gap-4 pb-4">
             <GithubButton />
             <LinkedInButton />
