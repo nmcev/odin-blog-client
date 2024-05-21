@@ -109,7 +109,7 @@ export default function PostPage() {
          </div>
 
           <div className="mt-8 max-w-4xl">
-            <p className="text-md text-neutral-900 font-careem max-sm:text-base" dangerouslySetInnerHTML={{__html: post.content}}>
+            <p className="text-lg text-neutral-900 font-careem max-sm:text-base" dangerouslySetInnerHTML={{__html: post.content}}>
             </p>
           </div>
               <article className='w-full gap-4  mx-auto'>
