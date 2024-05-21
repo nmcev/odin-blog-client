@@ -9,7 +9,7 @@ function AboutButton() {
     }
 
     return (
-      <button type="button" onClick={handleClick}>
+      <button aria-label='navigate about page' type="button" onClick={handleClick}>
         About
       </button>
     );
@@ -22,7 +22,7 @@ function PostsButton() {
     }
 
     return (
-      <button type="button" onClick={handleClick}>
+      <button aria-label='navigate posts page' type="button" onClick={handleClick}>
         Posts
       </button>
     );
@@ -35,7 +35,7 @@ function HomeButton() {
     }
 
     return (
-        <button type="button" onClick={handleClick}>
+        <button aria-label='home button'  type="button" onClick={handleClick}>
           <MdHome />
         </button>
       );
