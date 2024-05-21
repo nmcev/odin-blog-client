@@ -7,10 +7,15 @@ import { PostsContext } from "../context/PostsContext"
 
 export default function RecentPosts() {
     const { posts } = useContext(PostsContext);
-    const [biggestPost, setBiggestPost] = useState({})
+    const [biggestPost, setBiggestPost] = useState(null);
+    const [twoPosts, setTwoPosts] = useState([]);
+  
     useEffect(() => {
-        setBiggestPost(posts[0])
-    }, [posts])
+      if (posts.length > 0) {
+        setBiggestPost(posts[2]);
+        setTwoPosts(posts.slice(0, 2));
+      }
+    }, [posts]);
   return (
       <>
 <section className="text-black">
@@ -39,8 +44,10 @@ export default function RecentPosts() {
         </div>
 
         <section className='container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-32 mt-10'>
-            <BiggestPost post={biggestPost} />
-            <TwoPostsSide />
+        {biggestPost && <BiggestPost post={biggestPost} />}
+            {twoPosts.length > 0 && (
+              <TwoPostsSide post1={twoPosts[0]} post2={twoPosts[1]} />
+            )}
         </section>
     </article>
 
