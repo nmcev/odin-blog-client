@@ -15,6 +15,10 @@ export default function PostPage() {
   });
 
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [errors, setErrors] = useState([]);
   useEffect(() => {
     if (posts.length > 0) {
