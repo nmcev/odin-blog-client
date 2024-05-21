@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import { PostsContext } from '../context/PostsContext';
 import Comment from '../components/Comment';
 import NotFoundPage from './NotFoundPage';
+import { FaRegUserCircle } from 'react-icons/fa';
 export default function PostPage() {
   const [post, setPost] = useState({})
   const { slug } = useParams();
@@ -105,7 +106,14 @@ export default function PostPage() {
         </div>
 
         <div className="mt-8">
-            <img src={post.img} alt="blog" className="max-w-full h-auto lg:max-w-[800px]" />
+              <img src={post.img} alt="blog" className="max-w-full h-auto lg:max-w-[875px]" />
+              <div className='flex text-sm text-neutral-500 items-center gap-2 mt-1 font-careem'>
+                <FaRegUserCircle />
+                <p>
+                  posted by<span> admin</span>
+                </p>
+
+          </div>
          </div>
 
           <div className="mt-8 max-w-4xl">
