@@ -22,7 +22,7 @@ export default function RecentPosts() {
 
     <div className="container mx-auto py-12">
     <article className="flex flex-col items-center justify-center max-sm:mx-2">
-        <h2 className=" text-4xl font-bold text-center bg-clip-text text-transparent  animate-gradient bg-opacity-50 font-poppins uppercase bg-[linear-gradient(to_right,#333333,#191919,#a3a3a3,#262626,#333333,#c0c0c0)]">
+        <h2 className=" text-4xl font-bold text-center bg-clip-text text-transparent dark:text-white animate-gradient bg-opacity-50 font-poppins uppercase bg-[linear-gradient(to_right,#333333,#191919,#a3a3a3,#262626,#333333,#c0c0c0)]">
             Welcome to the Blog
             <br /> from the future.
         </h2>
