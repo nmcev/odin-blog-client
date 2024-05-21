@@ -1,5 +1,9 @@
+import Header from "../components/Header";
+
 export default function AboutPage() {
     return (
+    <>
+    <Header color="black" />
       <section className="container mx-auto mt-8 flex flex-col items-center px-4">
         <h1 className="text-2xl font-bold text-center font-boldPoppins">About</h1>
 
@@ -30,5 +34,6 @@ export default function AboutPage() {
         </footer>
 
       </section>
+    </>
     );
 }
