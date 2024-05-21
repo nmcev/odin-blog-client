@@ -3,21 +3,25 @@
 @font-face {
   font-family: 'Poppins';
   src: url(./assets/fonts/popins/Poppins-Black.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Poppins-light';
   src: url(./assets/fonts/popins/Poppins-Light.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Poppins-bold';
   src: url(./assets/fonts/popins/Poppins-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family:  'Careem';
   src: url(./assets/fonts/careem/CareemRegular.ttf);
+  font-display: swap;
 }
 
 .animate-gradient {
