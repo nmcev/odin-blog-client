@@ -43,7 +43,7 @@ export default function RecentPosts() {
          </p>
         </div>
 
-        <section className='container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-32 mt-10'>
+        <section className='container grid grid-cols-1 md:grid-cols-2 justify-items-center mt-10'>
         {biggestPost && <BiggestPost post={biggestPost} />}
             {twoPosts.length > 0 && (
               <TwoPostsSide post1={twoPosts[0]} post2={twoPosts[1]} />
