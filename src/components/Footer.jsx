@@ -33,7 +33,7 @@ export default function Footer() {
         <footer className="footer p-5 flex justify-around items-center flex-wrap pt-24 max-sm:flex-col max-sm:gap-8 mt-auto">
         <div className="flex items-center">
                 <div className="flex-1">
-                    <p className=" text-[#3e3e3e]">
+                    <p className=" text-[#3e3e3e] font-careem">
                         &copy; 2024 Blog from the future. All rights reserved.
                     </p>
                 </div>
