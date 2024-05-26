@@ -1,8 +1,13 @@
-# React + Vite
+## Feature Blog
+It is a project along with The Odin Project, and it focuses all about building an API for a blog and I decided to make it my own blog for fun. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live deployment
 
-Currently, two official plugins are available:
+[The Feature Blog]('https://blog.muha.tech')
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Used Tech:
+- ReactJS
+- ExpressJs
+- MongoDB
+- TailwindCSS
