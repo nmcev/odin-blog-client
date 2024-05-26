@@ -3,7 +3,7 @@ It is a project along with The Odin Project, and it focuses all about building a
 
 ### Live deployment
 
-[The Feature Blog]('https://blog.muha.tech')
+[The Feature Blog](https://blog.muha.tech)
 
 
 ### Used Tech:
